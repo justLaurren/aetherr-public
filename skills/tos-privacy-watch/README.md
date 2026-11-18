@@ -38,11 +38,19 @@ This skill has an AI read email from strangers, so it's built to be careful:
 
 ## Install
 
-### Claude (claude.ai, desktop, Claude Code)
-- **Claude apps:** download [`SKILL.md`](SKILL.md) and upload it as a skill in Claude's settings.
+Custom GPTs and Gemini Gems are being retired in favor of skills, and this skill follows the open Agent Skills standard, so you add it as a skill in each app.
+
+### Claude
+- **Claude apps:** download this folder as a ZIP and upload it under Customize > Skills. Step by step: [Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills).
 - **Claude Code:** copy this folder into `~/.claude/skills/` (all your projects) or `.claude/skills/` (one project).
 
-### GitHub Copilot, Cursor, Codex, Gemini CLI and other agents
+### ChatGPT
+Upload it under Plugins > Skills > Create > Upload from your computer. Skills are currently available on ChatGPT Business, Enterprise, Healthcare and Edu plans. Step by step: [Skills in ChatGPT](https://help.openai.com/en/articles/20001066-skills-in-chatgpt).
+
+### Gemini
+Upload [`SKILL.md`](SKILL.md) on the Skills page in Gemini's settings. Step by step: [Create and manage skills for Gemini Apps](https://support.google.com/gemini/answer/17094296?hl=en).
+
+### GitHub Copilot, Cursor, Codex, Gemini CLI and other coding agents
 ```
 gh skill install justLaurren/aetherr-public tos-privacy-watch
 ```
@@ -51,11 +59,8 @@ or
 npx skills add justLaurren/aetherr-public --skill tos-privacy-watch
 ```
 
-### Any AI assistant (ChatGPT, Gemini, Copilot…) as a prompt
-Copy the contents of [`SKILL.md`](SKILL.md) into:
-- **ChatGPT:** a Custom GPT's or Project's instructions
-- **Gemini:** a Gem's instructions
-- **Anything else:** paste it at the start of a chat
+### Any other assistant
+Paste the contents of [`SKILL.md`](SKILL.md) at the start of a chat.
 
 It works best with an email connector (Gmail or Outlook) and web browsing turned on. Without them, it asks you to paste the email or the policy text.
 
